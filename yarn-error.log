@@ -1,5 +1,5 @@
 Arguments: 
-  /home/abdillahh/.nvm/versions/node/v9.1.0/bin/node /home/abdillahh/.nvm/versions/node/v9.1.0/bin/yarn start
+  /home/abdillahh/.nvm/versions/node/v9.1.0/bin/node /home/abdillahh/.nvm/versions/node/v9.1.0/bin/yarn build
 
 PATH: 
   /home/abdillahh/.nvm/versions/node/v9.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/jdk1.8.0_161/bin:/usr/lib/jvm/jdk1.8.0_161/db/bin:/usr/lib/jvm/jdk1.8.0_161/jre/bin:/snap/bin:/home/abdillahh/Android/Sdk/tools:/home/abdillahh/Android/Sdk/platform-tool
@@ -35,6 +35,7 @@ npm manifest:
     "dependencies": {
       "react": "16.2.0",
       "react-native": "0.52.0",
+      "react-native-scrollable-tab-view": "^0.8.0",
       "react-native-sensors": "^2.4.2"
     }
   }
@@ -1342,7 +1343,7 @@ Lockfile:
     version "3.3.0"
     resolved "https://registry.yarnpkg.com/crc/-/crc-3.3.0.tgz#fa622e1bc388bf257309082d6b65200ce67090ba"
   
-  create-react-class@^15.5.2:
+  create-react-class@^15.5.2, create-react-class@^15.6.2:
     version "15.6.3"
     resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
     dependencies:
@@ -3311,6 +3312,14 @@ Lockfile:
       shell-quote "^1.6.1"
       ws "^2.0.3"
   
+  react-native-scrollable-tab-view@^0.8.0:
+    version "0.8.0"
+    resolved "https://registry.yarnpkg.com/react-native-scrollable-tab-view/-/react-native-scrollable-tab-view-0.8.0.tgz#5cb1fcfce07bf530a3c81ab51fc5071144edac5c"
+    dependencies:
+      create-react-class "^15.6.2"
+      prop-types "^15.6.0"
+      react-timer-mixin "^0.13.3"
+  
   react-native-sensors@^2.4.2:
     version "2.4.2"
     resolved "https://registry.yarnpkg.com/react-native-sensors/-/react-native-sensors-2.4.2.tgz#557412ad4cafeea115856e694b7cd5f504b31e03"
@@ -3391,7 +3400,7 @@ Lockfile:
       object-assign "^4.1.1"
       prop-types "^15.6.0"
   
-  react-timer-mixin@^0.13.2:
+  react-timer-mixin@^0.13.2, react-timer-mixin@^0.13.3:
     version "0.13.3"
     resolved "https://registry.yarnpkg.com/react-timer-mixin/-/react-timer-mixin-0.13.3.tgz#0da8b9f807ec07dc3e854d082c737c65605b3d22"
   
@@ -4395,17 +4404,14 @@ Lockfile:
       yargs-parser "^7.0.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c react-native start
-  Directory: /media/abdillahh/DAEAC85BEAC83613/hacktiv8/phase 3/week 3/test sensor/test
-  Output:
-  
-      at ProcessTermError.MessageError (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:30281:17)
-      at emitTwo (events.js:135:13)
-      at ChildProcess.emit (events.js:224:7)
-      at maybeClose (internal/child_process.js:943:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+  Error: Command "build" not found.
+      at new MessageError (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:23451:28)
+      at /home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:95:12
+      at runCommand (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:87312:22)
+      at Object.<anonymous> (/home/abdillahh/.nvm/versions/node/v9.1.0/lib/node_modules/yarn/lib/cli.js:87412:14)

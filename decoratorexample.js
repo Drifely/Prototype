@@ -57,7 +57,7 @@ const Speed = ({
 	return (
 		<View> 
 			<Text style={styles.welcome}>{name}: Y: {y.toFixed(2)} / Miring: {x.toFixed(2)} / Z: {z.toFixed(2)}</Text>
-			<Text> Jahrakal's Movement Speed : {(z.toFixed(2)*3.6).toFixed(2)} km/h </Text>
+			<Text> Jahrakal's Movement Speed : {Math.floor((+x.toFixed(0) + +y.toFixed(0) + +z.toFixed(0) - 9.8)) * 3.6} km/h </Text>
 		</View>
 	)
 };
@@ -92,10 +92,10 @@ export default class DecoratorExample extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#F5FCFF',
+		// flex: 1,
+		// justifyContent: 'center',
+		// alignItems: 'center',
+		// backgroundColor: '#F5FCFF',
 	},
 	welcome: {
 		fontSize: 20,

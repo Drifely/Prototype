@@ -4,6 +4,10 @@
         "source": "/media/abdillahh/DAEAC85BEAC83613/hacktiv8/phase 3/week 3/test sensor/test/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/media/abdillahh/DAEAC85BEAC83613/hacktiv8/phase 3/week 3/backup/Prototype/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/media/abdillahh/DAEAC85BEAC83613/hacktiv8/phase 3/week 3/backup/Prototype/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/awtian/FINAL/Prototype/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/Users/awtian/FINAL/Prototype/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
