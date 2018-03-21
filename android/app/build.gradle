@@ -107,6 +107,16 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+      signingConfigs {
+        release {
+            if (project.hasProperty('drifely.keystore')) {
+                storeFile file(drifely.keystore)
+                storePassword 'hehehe'
+                keyAlias 'drifely-key'
+                keyPassword 'hehehe'
+            }
+        }
+    }
     splits {
         abi {
             reset()
