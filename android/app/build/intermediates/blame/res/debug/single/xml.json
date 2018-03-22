@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/res/merged/debug/xml/syncadapter.xml",
+        "source": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/exploded-aar/letsGo/react-native-mauron85-background-geolocation/unspecified/res/xml/syncadapter.xml"
+    },
+    {
+        "merged": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.2/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/res/merged/debug/xml/authenticator.xml",
+        "source": "/home/angga/Desktop/Hacktiv8/phase3/letsGo/android/app/build/intermediates/exploded-aar/letsGo/react-native-mauron85-background-geolocation/unspecified/res/xml/authenticator.xml"
+    }
+]
