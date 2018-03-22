@@ -54,7 +54,7 @@ const Speed = ({
 	return (
 		<View> 
 			<Text style={styles.welcome}>{name}: Y: {y.toFixed(2)} / Miring: {x.toFixed(2)} / Z: {z.toFixed(2)}</Text>
-			<Text> Jahrakal's Movement Speed : {Math.floor((+x.toFixed(0) + +y.toFixed(0) + +z.toFixed(0) - cali)) * 3.6} km/h </Text>
+			<Text> Jahrakal's Movement Speed : {Math.floor(( Math.abs(+x.toFixed(0)) + Math.abs(+y.toFixed(0)) + Math.abs(+z.toFixed(0)) - cali)) * 3.6} km/h </Text>
 		</View>
 	)
 };
@@ -80,7 +80,7 @@ class SensorsDisplay extends Component {
 				<Button 
 					title="Callibrate"
 					onPress={ () => this.setState({
-						callibrate: (Accelerometer.x+Accelerometer.y+Accelerometer.z)
+						callibrate: (Math.abs(Accelerometer.x)+Math.abs(Accelerometer.y)+Math.abs(Accelerometer.z))
 					})}/>
 			</View>
 		);
