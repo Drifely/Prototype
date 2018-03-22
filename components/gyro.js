@@ -3,7 +3,8 @@ import {
 	StyleSheet,
 	Text,
 	View,
-	Alert
+	Alert,
+	Button
 } from 'react-native';
 import RNSensors, { Accelerometer } from 'react-native-sensors';
 
@@ -48,16 +49,24 @@ const Speed = ({
 		z = 0,
 	} = {},
 	name,
+	cali
 }) => {
 	return (
 		<View> 
 			<Text style={styles.welcome}>{name}: Y: {y.toFixed(2)} / Miring: {x.toFixed(2)} / Z: {z.toFixed(2)}</Text>
-			<Text> Jahrakal's Movement Speed : {Math.floor((+x.toFixed(0) + +y.toFixed(0) + +z.toFixed(0) - 9.8)) * 3.6} km/h </Text>
+			<Text> Jahrakal's Movement Speed : {Math.floor((+x.toFixed(0) + +y.toFixed(0) + +z.toFixed(0) - cali)) * 3.6} km/h </Text>
 		</View>
 	)
 };
 
 class SensorsDisplay extends Component {
+	constructor () {
+		super()
+		this.state = {
+			callibrate: 0 
+		}
+	}
+	
 	render() {
 		const {
 			Accelerometer,
@@ -66,8 +75,13 @@ class SensorsDisplay extends Component {
 
 		return (
 			<View style={styles.container}>
-				<Speed name="kecepatan" value={Accelerometer} />
+				<Speed name="kecepatan" value={Accelerometer} cali={this.state.callibrate}/>
 				<SensorDisplay name="Gyroscope" value={Gyroscope} />
+				<Button 
+					title="Callibrate"
+					onPress={ () => this.setState({
+						callibrate: (Accelerometer.x+Accelerometer.y+Accelerometer.z)
+					})}/>
 			</View>
 		);
 	}
